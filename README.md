@@ -1,6 +1,6 @@
-# Uniswap-UI-fork template
+# DeXit DeX template
 
-### Rinkeby
+### DeXit Finance
 
 - Factory: 0xEfDE0f784CA1227D0E0E36eA3E001bc8A9Eb38c0
 - Router: 0x4f2617a0CB594937B07f36302ca7E3560A5D545c
