@@ -3,6 +3,7 @@
 
 # production
 /build
+node_modules.zip
 
 # misc
 .secret
