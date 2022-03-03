@@ -1,0 +1,25 @@
+{
+  "name": "Uniswap Default List",
+  "timestamp": "2021-01-21T23:57:10.982Z",
+  "version": {
+    "major": 2,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
+  "keywords": [
+    "uniswap",
+    "default"
+  ],
+  "tokens": [
+    {
+      "name": "Wrapped DXT",
+      "address": "0x630CC517fdE49E0fe0Bc881752e4273dC73ea8Cf",
+      "symbol": "WDXT",
+      "decimals": 18,
+      "chainId": 899,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x630CC517fdE49E0fe0Bc881752e4273dC73ea8Cf/logo.png"
+    }
+  ]
+}
