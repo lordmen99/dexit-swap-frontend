@@ -7,8 +7,11 @@ import useHttpLocations from '../../hooks/useHttpLocations';
 import { WrappedTokenInfo } from '../../state/lists/hooks';
 import Logo from '../Logo';
 
+// const getTokenLogoURL = (address: string) =>
+//   `https://byteswap.exchange/images/tokens/${address}.png`;
+
 const getTokenLogoURL = (address: string) =>
-  `https://byteswap.exchange/images/tokens/${address}.png`;
+  `https://dexit.finance/images/tokens/${address}.png`;
 
 const StyledEthereumLogo = styled.img<{ size: string }>`
   width: ${({ size }) => size};
@@ -53,5 +56,13 @@ export default function CurrencyLogo({
     return <StyledEthereumLogo src={EthereumLogo} size={size} style={style} />;
   }
 
+  // return <StyledLogo size={size} srcs={srcs} alt={`${currency?.symbol ?? 'token'} logo`} style={style} />;
+
+  if (currency instanceof Token) {
+    if (currency instanceof WrappedTokenInfo) {
+      getTokenLogoURL(currency.address)
+      return <StyledEthereumLogo src={getTokenLogoURL(currency.address)} size={size} style={style} />;
+    }
+  }
   return <StyledLogo size={size} srcs={srcs} alt={`${currency?.symbol ?? 'token'} logo`} style={style} />;
 }
