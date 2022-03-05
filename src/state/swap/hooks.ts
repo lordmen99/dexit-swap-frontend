@@ -33,7 +33,7 @@ export function useSwapActionHandlers(): {
       dispatch(
         selectCurrency({
           field,
-          currencyId: currency instanceof Token ? currency.address : currency === ETHER ? 'DTX' : '',
+          currencyId: currency instanceof Token ? currency.address : currency === ETHER ? 'DXT' : '',
         })
       );
     },
@@ -200,10 +200,10 @@ function parseCurrencyFromURLParameter(urlParam: any): string {
   if (typeof urlParam === 'string') {
     const valid = isAddress(urlParam);
     if (valid) return valid;
-    if (urlParam.toUpperCase() === 'DTX') return 'DTX';
-    if (valid === false) return 'DTX';
+    if (urlParam.toUpperCase() === 'DXT') return 'DXT';
+    if (valid === false) return 'DXT';
   }
-  return 'DTX' ?? '';
+  return 'DXT' ?? '';
 }
 
 function parseTokenAmountURLParameter(urlParam: any): string {
